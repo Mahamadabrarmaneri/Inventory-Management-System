@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.form-container, .search-sort-container, .inventory-container, .total-value {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.search-sort-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchInput, #sortSelect {
+    width: 48%;
+}
+
+.total-value {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    .search-sort-container {
+        flex-direction: column;
+    }
+    
+    #searchInput, #sortSelect {
+        width: 100%;
+    }
+}
